@@ -1,0 +1,19 @@
+cmake_minimum_required(VERSION 3.10)
+
+project(choc)
+
+add_library(${PROJECT_NAME} INTERFACE)
+
+target_include_directories(${PROJECT_NAME}
+  INTERFACE
+  audio
+  containers
+  gui
+  javascript
+  math
+  memory
+  network
+  platform
+  text
+  threading
+)
